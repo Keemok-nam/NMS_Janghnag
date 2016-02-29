@@ -478,6 +478,8 @@ namespace NMS
 
                 case "수인선":
                     SetText(lblTitle, "수 인 선   열 차 무 선   N M S");
+                    ucRUSt.SetEnableFM(false);
+                    
                     break;
             }
 
@@ -2696,11 +2698,13 @@ namespace NMS
             #endregion
             
             j = 2;
+
             byte tmpMUId = buffer[j++];     //MU ID
             byte tmpRUId = buffer[j++];     //RU ID
             byte tmpCMD = buffer[j++];      //CMD
             byte tmpLng = buffer[j++];      //Data 길이
-
+            
+            //MU ID
             tmpMUId = (byte)(tmpMUId - 0x40);
             tmpRUId = (byte)(tmpRUId - 0x30);
 
@@ -3096,10 +3100,13 @@ namespace NMS
                         if (!Common.clsNMS.flagMuError[muID - 1])
                         {   //정상에서 Error가 발생한 상태이므로 메세지창을 띄운다.
 
-                            frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
-                            AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
 
-                            Common.clsNMS.flagMuError[muID - 1] = true;
+                            //수정일 : 2016-02-29
+                            //일단 검수를 위해 안보이게..
+                            //FIXME 검수 후 풀어야함
+                            //frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
+                            //AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
+                            //Common.clsNMS.flagMuError[muID - 1] = true;
                         }
                         return 1;
 

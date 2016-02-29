@@ -9401,8 +9401,8 @@
             // 
             this.panelGround1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGround1.BackgroundImage")));
             this.panelGround1.Controls.Add(this.lblTitle);
-            this.panelGround1.Controls.Add(this.panelMainBase1);
             this.panelGround1.Controls.Add(this.panelMainBase2);
+            this.panelGround1.Controls.Add(this.panelMainBase1);
             this.panelGround1.Location = new System.Drawing.Point(12, 8);
             this.panelGround1.Name = "panelGround1";
             this.panelGround1.Size = new System.Drawing.Size(1880, 870);
@@ -13809,9 +13809,9 @@
             // panelMainBase2
             // 
             this.panelMainBase2.BackColor = System.Drawing.Color.White;
+            this.panelMainBase2.Controls.Add(this.ucRUSt);
             this.panelMainBase2.Controls.Add(this.ucMUSt_ILSAN);
             this.panelMainBase2.Controls.Add(this.ucMUSt);
-            this.panelMainBase2.Controls.Add(this.ucRUSt);
             this.panelMainBase2.Location = new System.Drawing.Point(15, 72);
             this.panelMainBase2.Name = "panelMainBase2";
             this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);

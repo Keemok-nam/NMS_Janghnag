@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMS", "NMS\NMS.csproj", "{67DC5CFC-E180-471E-9D51-13B56FC642DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\..\6. 과천,분당,일산\프로그램\999. 공통\Common\Ver 1.01\Common\Common.csproj", "{5F0FD856-5200-4D88-9167-88948CA40A72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,16 @@ Global
 		{67DC5CFC-E180-471E-9D51-13B56FC642DD}.Release|Mixed Platforms.Build.0 = Release|x86
 		{67DC5CFC-E180-471E-9D51-13B56FC642DD}.Release|x86.ActiveCfg = Release|x86
 		{67DC5CFC-E180-471E-9D51-13B56FC642DD}.Release|x86.Build.0 = Release|x86
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5F0FD856-5200-4D88-9167-88948CA40A72}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
