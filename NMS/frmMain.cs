@@ -3092,7 +3092,9 @@ namespace NMS
             double tmpValue = dcValue / 10.0;
             if ((tmpValue < Common.clsNMS.rangeValue[2]) || (tmpValue > Common.clsNMS.rangeValue[3]))
             {
-                SetVisible(frmErrMsg, true);
+                //수정일 : 2016-02-29
+                //검수용
+                //SetVisible(frmErrMsg, true);
 
                 switch (mode)
                 {
@@ -3111,6 +3113,8 @@ namespace NMS
                         return 1;
 
                     case 1: //RU_A
+                        SetVisible(frmErrMsg, true);
+
                         if (!Common.clsNMS.flagRuBdaError[muID - 1, ruID, 0])
                         {
                             frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 광중계장치(RU_A)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
@@ -3121,6 +3125,9 @@ namespace NMS
                         return 1;
 
                     case 2: //RU_B
+
+                        SetVisible(frmErrMsg, true);
+
                         if (!Common.clsNMS.flagRuBdaError[muID - 1, ruID, 0])
                         {
                             frmErrMsg.SetText(Common.clsNMS.muruName[muID - 1].ruName[ruID - 1].ruName + " 광중계장치(RU_B)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");

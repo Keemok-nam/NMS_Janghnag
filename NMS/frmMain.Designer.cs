@@ -6986,6 +6986,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panelGround1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panelMainBase2 = new System.Windows.Forms.Panel();
+            this.ucRUSt = new Common.ucRUStatus();
+            this.ucMUSt_ILSAN = new Common.ucMUStatus_ILSAN();
+            this.ucMUSt = new Common.ucMUStatus();
             this.panelMainBase1 = new System.Windows.Forms.Panel();
             this.panel수인선 = new System.Windows.Forms.Panel();
             this.label145 = new System.Windows.Forms.Label();
@@ -7395,10 +7399,6 @@
             this.label139 = new System.Windows.Forms.Label();
             this.label140 = new System.Windows.Forms.Label();
             this.label141 = new System.Windows.Forms.Label();
-            this.panelMainBase2 = new System.Windows.Forms.Panel();
-            this.ucMUSt_ILSAN = new Common.ucMUStatus_ILSAN();
-            this.ucMUSt = new Common.ucMUStatus();
-            this.ucRUSt = new Common.ucRUStatus();
             this.panelMessageView.SuspendLayout();
             this.panelGround3.SuspendLayout();
             this.gbDB.SuspendLayout();
@@ -7428,6 +7428,7 @@
             this.tabLineTest.SuspendLayout();
             this.panelGround2.SuspendLayout();
             this.panelGround1.SuspendLayout();
+            this.panelMainBase2.SuspendLayout();
             this.panelMainBase1.SuspendLayout();
             this.panel수인선.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -7581,7 +7582,6 @@
             this.panel111.SuspendLayout();
             this.panel112.SuspendLayout();
             this.panel113.SuspendLayout();
-            this.panelMainBase2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btMenu3
@@ -9419,6 +9419,44 @@
             this.lblTitle.TabIndex = 384;
             this.lblTitle.Text = "과 천 선   열 차 무 선   N M S";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelMainBase2
+            // 
+            this.panelMainBase2.BackColor = System.Drawing.Color.White;
+            this.panelMainBase2.Controls.Add(this.ucMUSt);
+            this.panelMainBase2.Controls.Add(this.ucRUSt);
+            this.panelMainBase2.Controls.Add(this.ucMUSt_ILSAN);
+            this.panelMainBase2.Location = new System.Drawing.Point(15, 72);
+            this.panelMainBase2.Name = "panelMainBase2";
+            this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);
+            this.panelMainBase2.TabIndex = 476;
+            // 
+            // ucRUSt
+            // 
+            this.ucRUSt.BackColor = System.Drawing.Color.Black;
+            this.ucRUSt.Location = new System.Drawing.Point(5, 5);
+            this.ucRUSt.Name = "ucRUSt";
+            this.ucRUSt.Size = new System.Drawing.Size(1840, 780);
+            this.ucRUSt.TabIndex = 1;
+            this.ucRUSt.ruControlClick += new Common.UserControl_Control(this.RuSt_ruControlClick);
+            // 
+            // ucMUSt_ILSAN
+            // 
+            this.ucMUSt_ILSAN.BackColor = System.Drawing.Color.Black;
+            this.ucMUSt_ILSAN.Location = new System.Drawing.Point(5, 5);
+            this.ucMUSt_ILSAN.Name = "ucMUSt_ILSAN";
+            this.ucMUSt_ILSAN.Size = new System.Drawing.Size(1220, 780);
+            this.ucMUSt_ILSAN.TabIndex = 2;
+            this.ucMUSt_ILSAN.muControlClick += new Common.UserControl_Control(this.ucMUSt_ILSAN_muControlClick);
+            // 
+            // ucMUSt
+            // 
+            this.ucMUSt.BackColor = System.Drawing.Color.Black;
+            this.ucMUSt.Location = new System.Drawing.Point(5, 5);
+            this.ucMUSt.Name = "ucMUSt";
+            this.ucMUSt.Size = new System.Drawing.Size(1840, 780);
+            this.ucMUSt.TabIndex = 0;
+            this.ucMUSt.muControlClick += new Common.UserControl_Control(this.MUSt_muControlClick);
             // 
             // panelMainBase1
             // 
@@ -13806,44 +13844,6 @@
             this.label141.TabIndex = 210;
             this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panelMainBase2
-            // 
-            this.panelMainBase2.BackColor = System.Drawing.Color.White;
-            this.panelMainBase2.Controls.Add(this.ucRUSt);
-            this.panelMainBase2.Controls.Add(this.ucMUSt_ILSAN);
-            this.panelMainBase2.Controls.Add(this.ucMUSt);
-            this.panelMainBase2.Location = new System.Drawing.Point(15, 72);
-            this.panelMainBase2.Name = "panelMainBase2";
-            this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);
-            this.panelMainBase2.TabIndex = 476;
-            // 
-            // ucMUSt_ILSAN
-            // 
-            this.ucMUSt_ILSAN.BackColor = System.Drawing.Color.Black;
-            this.ucMUSt_ILSAN.Location = new System.Drawing.Point(5, 5);
-            this.ucMUSt_ILSAN.Name = "ucMUSt_ILSAN";
-            this.ucMUSt_ILSAN.Size = new System.Drawing.Size(1220, 780);
-            this.ucMUSt_ILSAN.TabIndex = 2;
-            this.ucMUSt_ILSAN.muControlClick += new Common.UserControl_Control(this.ucMUSt_ILSAN_muControlClick);
-            // 
-            // ucMUSt
-            // 
-            this.ucMUSt.BackColor = System.Drawing.Color.Black;
-            this.ucMUSt.Location = new System.Drawing.Point(5, 5);
-            this.ucMUSt.Name = "ucMUSt";
-            this.ucMUSt.Size = new System.Drawing.Size(1840, 780);
-            this.ucMUSt.TabIndex = 0;
-            this.ucMUSt.muControlClick += new Common.UserControl_Control(this.MUSt_muControlClick);
-            // 
-            // ucRUSt
-            // 
-            this.ucRUSt.BackColor = System.Drawing.Color.Black;
-            this.ucRUSt.Location = new System.Drawing.Point(5, 5);
-            this.ucRUSt.Name = "ucRUSt";
-            this.ucRUSt.Size = new System.Drawing.Size(1840, 780);
-            this.ucRUSt.TabIndex = 1;
-            this.ucRUSt.ruControlClick += new Common.UserControl_Control(this.RuSt_ruControlClick);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -13907,6 +13907,7 @@
             this.tabLineTest.ResumeLayout(false);
             this.panelGround2.ResumeLayout(false);
             this.panelGround1.ResumeLayout(false);
+            this.panelMainBase2.ResumeLayout(false);
             this.panelMainBase1.ResumeLayout(false);
             this.panel수인선.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -14060,7 +14061,6 @@
             this.panel111.ResumeLayout(false);
             this.panel112.ResumeLayout(false);
             this.panel113.ResumeLayout(false);
-            this.panelMainBase2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
