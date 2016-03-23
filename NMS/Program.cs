@@ -5,6 +5,10 @@ using System.Windows.Forms;
 
 namespace NMS
 {
+
+    /// <summary>
+    /// IP 192.168.1.101
+    /// </summary>
     static class Program
     {
         /// <summary>
