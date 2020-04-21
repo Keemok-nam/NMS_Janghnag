@@ -6975,16 +6975,66 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.gbILSAN_MuAFGain = new System.Windows.Forms.GroupBox();
+            this.ucGainSet_ILSAN = new Common.ucASGainSet_ILSAN();
             this.tabRange = new System.Windows.Forms.TabPage();
+            this.ucRangeSet = new Common.ucRangeSetup();
             this.tabLineTest = new System.Windows.Forms.TabPage();
+            this.ucLT = new Common.ucLineTest();
             this.label1 = new System.Windows.Forms.Label();
             this.panelGround2 = new System.Windows.Forms.Panel();
+            this.ucErrorSearch1 = new Common.ucErrorSearch();
             this.label2 = new System.Windows.Forms.Label();
             this.panelGround1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.panelMainBase2 = new System.Windows.Forms.Panel();
             this.panelMainBase1 = new System.Windows.Forms.Panel();
             this.panel수인선 = new System.Windows.Forms.Panel();
+            this.btSI_RUFM3 = new System.Windows.Forms.Button();
+            this.btSI_RU3 = new System.Windows.Forms.Button();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.lblConnectServer2 = new System.Windows.Forms.Label();
+            this.lblConnectServer1 = new System.Windows.Forms.Label();
+            this.lblTxServer2 = new System.Windows.Forms.Label();
+            this.lblTxServer1 = new System.Windows.Forms.Label();
+            this.lblRxServer2 = new System.Windows.Forms.Label();
+            this.lblRxServer1 = new System.Windows.Forms.Label();
+            this.btConnectServer2 = new System.Windows.Forms.Button();
+            this.btNMSPC = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btConnectServer1 = new System.Windows.Forms.Button();
+            this.label154 = new System.Windows.Forms.Label();
+            this.label153 = new System.Windows.Forms.Label();
+            this.panel126 = new System.Windows.Forms.Panel();
+            this.panel134 = new System.Windows.Forms.Panel();
+            this.panel135 = new System.Windows.Forms.Panel();
+            this.btSI_RUFM4 = new System.Windows.Forms.Button();
+            this.btSI_RU4 = new System.Windows.Forms.Button();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.panel136 = new System.Windows.Forms.Panel();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.btSI_MU4 = new System.Windows.Forms.Button();
+            this.btSI_MUFM4 = new System.Windows.Forms.Button();
+            this.label148 = new System.Windows.Forms.Label();
+            this.panel137 = new System.Windows.Forms.Panel();
+            this.panel138 = new System.Windows.Forms.Panel();
+            this.panel139 = new System.Windows.Forms.Panel();
+            this.btSI_RUFM4_1 = new System.Windows.Forms.Button();
+            this.btSI_RU4_1 = new System.Windows.Forms.Button();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.label152 = new System.Windows.Forms.Label();
+            this.panel124 = new System.Windows.Forms.Panel();
+            this.panel125 = new System.Windows.Forms.Panel();
+            this.panel127 = new System.Windows.Forms.Panel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.btSI_MU3 = new System.Windows.Forms.Button();
+            this.btSI_MUFM3 = new System.Windows.Forms.Button();
+            this.label144 = new System.Windows.Forms.Label();
+            this.panel128 = new System.Windows.Forms.Panel();
+            this.panel129 = new System.Windows.Forms.Panel();
+            this.panel133 = new System.Windows.Forms.Panel();
+            this.btSI_RUFM3_1 = new System.Windows.Forms.Button();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.btSI_RU3_1 = new System.Windows.Forms.Button();
+            this.label147 = new System.Windows.Forms.Label();
             this.label145 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel114 = new System.Windows.Forms.Panel();
@@ -7218,17 +7268,6 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.btHub2 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.lblConnectServer2 = new System.Windows.Forms.Label();
-            this.lblConnectServer1 = new System.Windows.Forms.Label();
-            this.lblTxServer2 = new System.Windows.Forms.Label();
-            this.lblTxServer1 = new System.Windows.Forms.Label();
-            this.lblRxServer2 = new System.Windows.Forms.Label();
-            this.lblRxServer1 = new System.Windows.Forms.Label();
-            this.btConnectServer2 = new System.Windows.Forms.Button();
-            this.btNMSPC = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btConnectServer1 = new System.Windows.Forms.Button();
             this.panel74 = new System.Windows.Forms.Panel();
             this.panel75 = new System.Windows.Forms.Panel();
             this.panel76 = new System.Windows.Forms.Panel();
@@ -7392,13 +7431,10 @@
             this.label139 = new System.Windows.Forms.Label();
             this.label140 = new System.Windows.Forms.Label();
             this.label141 = new System.Windows.Forms.Label();
+            this.panelMainBase2 = new System.Windows.Forms.Panel();
             this.ucMUSt = new Common.ucMUStatus();
             this.ucRUSt = new Common.ucRUStatus();
             this.ucMUSt_ILSAN = new Common.ucMUStatus_ILSAN();
-            this.ucGainSet_ILSAN = new Common.ucASGainSet_ILSAN();
-            this.ucRangeSet = new Common.ucRangeSetup();
-            this.ucLT = new Common.ucLineTest();
-            this.ucErrorSearch1 = new Common.ucErrorSearch();
             this.panelMessageView.SuspendLayout();
             this.panelGround3.SuspendLayout();
             this.gbDB.SuspendLayout();
@@ -7428,9 +7464,28 @@
             this.tabLineTest.SuspendLayout();
             this.panelGround2.SuspendLayout();
             this.panelGround1.SuspendLayout();
-            this.panelMainBase2.SuspendLayout();
             this.panelMainBase1.SuspendLayout();
             this.panel수인선.SuspendLayout();
+            this.panel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel126.SuspendLayout();
+            this.panel134.SuspendLayout();
+            this.panel135.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.panel136.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            this.panel137.SuspendLayout();
+            this.panel138.SuspendLayout();
+            this.panel139.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            this.panel124.SuspendLayout();
+            this.panel125.SuspendLayout();
+            this.panel127.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            this.panel128.SuspendLayout();
+            this.panel129.SuspendLayout();
+            this.panel133.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel114.SuspendLayout();
             this.panel115.SuspendLayout();
@@ -7515,8 +7570,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel74.SuspendLayout();
             this.panel75.SuspendLayout();
             this.panel76.SuspendLayout();
@@ -7582,6 +7635,7 @@
             this.panel111.SuspendLayout();
             this.panel112.SuspendLayout();
             this.panel113.SuspendLayout();
+            this.panelMainBase2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btMenu3
@@ -7638,6 +7692,7 @@
             this.lvUseMsg.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lvUseMsg.FullRowSelect = true;
             this.lvUseMsg.GridLines = true;
+            this.lvUseMsg.HideSelection = false;
             this.lvUseMsg.Location = new System.Drawing.Point(109, 7);
             this.lvUseMsg.MultiSelect = false;
             this.lvUseMsg.Name = "lvUseMsg";
@@ -9310,6 +9365,15 @@
             this.gbILSAN_MuAFGain.TabStop = false;
             this.gbILSAN_MuAFGain.Text = "송/수신 게인 설정";
             // 
+            // ucGainSet_ILSAN
+            // 
+            this.ucGainSet_ILSAN.BackColor = System.Drawing.Color.White;
+            this.ucGainSet_ILSAN.Location = new System.Drawing.Point(5, 21);
+            this.ucGainSet_ILSAN.Name = "ucGainSet_ILSAN";
+            this.ucGainSet_ILSAN.Size = new System.Drawing.Size(752, 475);
+            this.ucGainSet_ILSAN.TabIndex = 186;
+            this.ucGainSet_ILSAN.gainSetControlClick += new Common.UserControl_Control(this.ucGainSet_ILSAN_gainSetControlClick);
+            // 
             // tabRange
             // 
             this.tabRange.Controls.Add(this.ucRangeSet);
@@ -9320,6 +9384,14 @@
             this.tabRange.Text = "  임계치 설정  ";
             this.tabRange.UseVisualStyleBackColor = true;
             // 
+            // ucRangeSet
+            // 
+            this.ucRangeSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucRangeSet.BackgroundImage")));
+            this.ucRangeSet.Location = new System.Drawing.Point(340, 139);
+            this.ucRangeSet.Name = "ucRangeSet";
+            this.ucRangeSet.Size = new System.Drawing.Size(447, 390);
+            this.ucRangeSet.TabIndex = 0;
+            // 
             // tabLineTest
             // 
             this.tabLineTest.Controls.Add(this.ucLT);
@@ -9329,6 +9401,14 @@
             this.tabLineTest.TabIndex = 4;
             this.tabLineTest.Text = "  회선시험  ";
             this.tabLineTest.UseVisualStyleBackColor = true;
+            // 
+            // ucLT
+            // 
+            this.ucLT.BackColor = System.Drawing.Color.Black;
+            this.ucLT.Location = new System.Drawing.Point(63, 34);
+            this.ucLT.Name = "ucLT";
+            this.ucLT.Size = new System.Drawing.Size(1000, 600);
+            this.ucLT.TabIndex = 0;
             // 
             // label1
             // 
@@ -9351,6 +9431,14 @@
             this.panelGround2.Name = "panelGround2";
             this.panelGround2.Size = new System.Drawing.Size(1880, 870);
             this.panelGround2.TabIndex = 397;
+            // 
+            // ucErrorSearch1
+            // 
+            this.ucErrorSearch1.BackColor = System.Drawing.Color.Black;
+            this.ucErrorSearch1.Location = new System.Drawing.Point(15, 72);
+            this.ucErrorSearch1.Name = "ucErrorSearch1";
+            this.ucErrorSearch1.Size = new System.Drawing.Size(1850, 790);
+            this.ucErrorSearch1.TabIndex = 387;
             // 
             // label2
             // 
@@ -9387,17 +9475,6 @@
             this.lblTitle.Text = "과 천 선   열 차 무 선   N M S";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panelMainBase2
-            // 
-            this.panelMainBase2.BackColor = System.Drawing.Color.White;
-            this.panelMainBase2.Controls.Add(this.ucMUSt);
-            this.panelMainBase2.Controls.Add(this.ucRUSt);
-            this.panelMainBase2.Controls.Add(this.ucMUSt_ILSAN);
-            this.panelMainBase2.Location = new System.Drawing.Point(15, 72);
-            this.panelMainBase2.Name = "panelMainBase2";
-            this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);
-            this.panelMainBase2.TabIndex = 476;
-            // 
             // panelMainBase1
             // 
             this.panelMainBase1.BackColor = System.Drawing.Color.White;
@@ -9412,22 +9489,526 @@
             // 
             // panel수인선
             // 
+            this.panel수인선.Controls.Add(this.btSI_RUFM3);
+            this.panel수인선.Controls.Add(this.btSI_RU3);
+            this.panel수인선.Controls.Add(this.panel29);
+            this.panel수인선.Controls.Add(this.label154);
+            this.panel수인선.Controls.Add(this.label153);
+            this.panel수인선.Controls.Add(this.panel126);
+            this.panel수인선.Controls.Add(this.panel137);
+            this.panel수인선.Controls.Add(this.panel124);
+            this.panel수인선.Controls.Add(this.panel128);
             this.panel수인선.Controls.Add(this.label145);
             this.panel수인선.Controls.Add(this.panel7);
             this.panel수인선.Controls.Add(this.panel117);
             this.panel수인선.Controls.Add(this.panel121);
             this.panel수인선.Controls.Add(this.panel130);
             this.panel수인선.Controls.Add(this.label151);
-            this.panel수인선.Location = new System.Drawing.Point(5, 5);
+            this.panel수인선.Location = new System.Drawing.Point(4, 5);
             this.panel수인선.Name = "panel수인선";
             this.panel수인선.Size = new System.Drawing.Size(1840, 780);
             this.panel수인선.TabIndex = 502;
+            this.panel수인선.Paint += new System.Windows.Forms.PaintEventHandler(this.panel수인선_Paint);
+            // 
+            // btSI_RUFM3
+            // 
+            this.btSI_RUFM3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RUFM3.Location = new System.Drawing.Point(569, 665);
+            this.btSI_RUFM3.Name = "btSI_RUFM3";
+            this.btSI_RUFM3.Size = new System.Drawing.Size(117, 45);
+            this.btSI_RUFM3.TabIndex = 487;
+            this.btSI_RUFM3.Text = "F M";
+            this.btSI_RUFM3.UseVisualStyleBackColor = true;
+            this.btSI_RUFM3.Visible = false;
+            // 
+            // btSI_RU3
+            // 
+            this.btSI_RU3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RU3.Location = new System.Drawing.Point(569, 620);
+            this.btSI_RU3.Name = "btSI_RU3";
+            this.btSI_RU3.Size = new System.Drawing.Size(117, 89);
+            this.btSI_RU3.TabIndex = 486;
+            this.btSI_RU3.Text = "광중계장치";
+            this.btSI_RU3.UseVisualStyleBackColor = true;
+            this.btSI_RU3.Visible = false;
+            this.btSI_RU3.Click += new System.EventHandler(this.btRuA_Click);
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.Black;
+            this.panel29.Controls.Add(this.lblConnectServer2);
+            this.panel29.Controls.Add(this.lblConnectServer1);
+            this.panel29.Controls.Add(this.lblTxServer2);
+            this.panel29.Controls.Add(this.lblTxServer1);
+            this.panel29.Controls.Add(this.lblRxServer2);
+            this.panel29.Controls.Add(this.lblRxServer1);
+            this.panel29.Controls.Add(this.btConnectServer2);
+            this.panel29.Controls.Add(this.btNMSPC);
+            this.panel29.Controls.Add(this.pictureBox2);
+            this.panel29.Controls.Add(this.btConnectServer1);
+            this.panel29.Location = new System.Drawing.Point(1422, 614);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(267, 158);
+            this.panel29.TabIndex = 481;
+            this.panel29.Visible = false;
+            // 
+            // lblConnectServer2
+            // 
+            this.lblConnectServer2.BackColor = System.Drawing.Color.Silver;
+            this.lblConnectServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblConnectServer2.Location = new System.Drawing.Point(5, 83);
+            this.lblConnectServer2.Name = "lblConnectServer2";
+            this.lblConnectServer2.Size = new System.Drawing.Size(24, 12);
+            this.lblConnectServer2.TabIndex = 498;
+            // 
+            // lblConnectServer1
+            // 
+            this.lblConnectServer1.BackColor = System.Drawing.Color.Silver;
+            this.lblConnectServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblConnectServer1.Location = new System.Drawing.Point(5, 5);
+            this.lblConnectServer1.Name = "lblConnectServer1";
+            this.lblConnectServer1.Size = new System.Drawing.Size(24, 12);
+            this.lblConnectServer1.TabIndex = 497;
+            // 
+            // lblTxServer2
+            // 
+            this.lblTxServer2.BackColor = System.Drawing.Color.Silver;
+            this.lblTxServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTxServer2.Location = new System.Drawing.Point(45, 83);
+            this.lblTxServer2.Name = "lblTxServer2";
+            this.lblTxServer2.Size = new System.Drawing.Size(12, 12);
+            this.lblTxServer2.TabIndex = 496;
+            // 
+            // lblTxServer1
+            // 
+            this.lblTxServer1.BackColor = System.Drawing.Color.Silver;
+            this.lblTxServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTxServer1.Location = new System.Drawing.Point(45, 5);
+            this.lblTxServer1.Name = "lblTxServer1";
+            this.lblTxServer1.Size = new System.Drawing.Size(12, 12);
+            this.lblTxServer1.TabIndex = 464;
+            // 
+            // lblRxServer2
+            // 
+            this.lblRxServer2.BackColor = System.Drawing.Color.Silver;
+            this.lblRxServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblRxServer2.Location = new System.Drawing.Point(32, 83);
+            this.lblRxServer2.Name = "lblRxServer2";
+            this.lblRxServer2.Size = new System.Drawing.Size(12, 12);
+            this.lblRxServer2.TabIndex = 495;
+            // 
+            // lblRxServer1
+            // 
+            this.lblRxServer1.BackColor = System.Drawing.Color.Silver;
+            this.lblRxServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblRxServer1.Location = new System.Drawing.Point(32, 5);
+            this.lblRxServer1.Name = "lblRxServer1";
+            this.lblRxServer1.Size = new System.Drawing.Size(12, 12);
+            this.lblRxServer1.TabIndex = 463;
+            // 
+            // btConnectServer2
+            // 
+            this.btConnectServer2.BackColor = System.Drawing.Color.Red;
+            this.btConnectServer2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btConnectServer2.Location = new System.Drawing.Point(1, 79);
+            this.btConnectServer2.Name = "btConnectServer2";
+            this.btConnectServer2.Size = new System.Drawing.Size(60, 78);
+            this.btConnectServer2.TabIndex = 433;
+            this.btConnectServer2.Text = "STBY";
+            this.btConnectServer2.UseVisualStyleBackColor = false;
+            // 
+            // btNMSPC
+            // 
+            this.btNMSPC.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btNMSPC.Location = new System.Drawing.Point(61, 122);
+            this.btNMSPC.Name = "btNMSPC";
+            this.btNMSPC.Size = new System.Drawing.Size(205, 35);
+            this.btNMSPC.TabIndex = 384;
+            this.btNMSPC.Text = "NMS PC";
+            this.btNMSPC.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(62, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(203, 120);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 432;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btConnectServer1
+            // 
+            this.btConnectServer1.BackColor = System.Drawing.Color.Red;
+            this.btConnectServer1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btConnectServer1.Location = new System.Drawing.Point(1, 1);
+            this.btConnectServer1.Name = "btConnectServer1";
+            this.btConnectServer1.Size = new System.Drawing.Size(60, 78);
+            this.btConnectServer1.TabIndex = 385;
+            this.btConnectServer1.Text = "MAIN";
+            this.btConnectServer1.UseVisualStyleBackColor = false;
+            // 
+            // label154
+            // 
+            this.label154.BackColor = System.Drawing.Color.Black;
+            this.label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label154.Location = new System.Drawing.Point(855, 360);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(10, 60);
+            this.label154.TabIndex = 485;
+            // 
+            // label153
+            // 
+            this.label153.BackColor = System.Drawing.Color.Black;
+            this.label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label153.Location = new System.Drawing.Point(488, 360);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(10, 60);
+            this.label153.TabIndex = 484;
+            // 
+            // panel126
+            // 
+            this.panel126.BackColor = System.Drawing.Color.Black;
+            this.panel126.Controls.Add(this.panel134);
+            this.panel126.Location = new System.Drawing.Point(215, 182);
+            this.panel126.Name = "panel126";
+            this.panel126.Size = new System.Drawing.Size(246, 417);
+            this.panel126.TabIndex = 482;
+            // 
+            // panel134
+            // 
+            this.panel134.BackColor = System.Drawing.Color.White;
+            this.panel134.Controls.Add(this.panel135);
+            this.panel134.Controls.Add(this.panel136);
+            this.panel134.Controls.Add(this.label148);
+            this.panel134.Location = new System.Drawing.Point(2, 2);
+            this.panel134.Name = "panel134";
+            this.panel134.Size = new System.Drawing.Size(242, 413);
+            this.panel134.TabIndex = 409;
+            // 
+            // panel135
+            // 
+            this.panel135.BackColor = System.Drawing.Color.Black;
+            this.panel135.Controls.Add(this.btSI_RUFM4);
+            this.panel135.Controls.Add(this.btSI_RU4);
+            this.panel135.Controls.Add(this.pictureBox22);
+            this.panel135.Location = new System.Drawing.Point(3, 54);
+            this.panel135.Name = "panel135";
+            this.panel135.Size = new System.Drawing.Size(119, 356);
+            this.panel135.TabIndex = 454;
+            // 
+            // btSI_RUFM4
+            // 
+            this.btSI_RUFM4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RUFM4.Location = new System.Drawing.Point(1, 310);
+            this.btSI_RUFM4.Name = "btSI_RUFM4";
+            this.btSI_RUFM4.Size = new System.Drawing.Size(117, 45);
+            this.btSI_RUFM4.TabIndex = 432;
+            this.btSI_RUFM4.Text = "F M";
+            this.btSI_RUFM4.UseVisualStyleBackColor = true;
+            this.btSI_RUFM4.Visible = false;
+            // 
+            // btSI_RU4
+            // 
+            this.btSI_RU4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RU4.Location = new System.Drawing.Point(1, 265);
+            this.btSI_RU4.Name = "btSI_RU4";
+            this.btSI_RU4.Size = new System.Drawing.Size(117, 90);
+            this.btSI_RU4.TabIndex = 384;
+            this.btSI_RU4.Text = "광중계장치";
+            this.btSI_RU4.UseVisualStyleBackColor = true;
+            this.btSI_RU4.Click += new System.EventHandler(this.btRuA_Click);
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(115, 262);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 431;
+            this.pictureBox22.TabStop = false;
+            // 
+            // panel136
+            // 
+            this.panel136.BackColor = System.Drawing.Color.Black;
+            this.panel136.Controls.Add(this.pictureBox26);
+            this.panel136.Controls.Add(this.btSI_MU4);
+            this.panel136.Controls.Add(this.btSI_MUFM4);
+            this.panel136.Location = new System.Drawing.Point(120, 54);
+            this.panel136.Name = "panel136";
+            this.panel136.Size = new System.Drawing.Size(119, 356);
+            this.panel136.TabIndex = 453;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
+            this.pictureBox26.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(115, 262);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 431;
+            this.pictureBox26.TabStop = false;
+            // 
+            // btSI_MU4
+            // 
+            this.btSI_MU4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_MU4.Location = new System.Drawing.Point(1, 265);
+            this.btSI_MU4.Name = "btSI_MU4";
+            this.btSI_MU4.Size = new System.Drawing.Size(117, 90);
+            this.btSI_MU4.TabIndex = 384;
+            this.btSI_MU4.Text = "기지국장치";
+            this.btSI_MU4.UseVisualStyleBackColor = true;
+            this.btSI_MU4.Click += new System.EventHandler(this.btMU_Click);
+            // 
+            // btSI_MUFM4
+            // 
+            this.btSI_MUFM4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_MUFM4.Location = new System.Drawing.Point(1, 310);
+            this.btSI_MUFM4.Name = "btSI_MUFM4";
+            this.btSI_MUFM4.Size = new System.Drawing.Size(117, 45);
+            this.btSI_MUFM4.TabIndex = 434;
+            this.btSI_MUFM4.Text = "F M";
+            this.btSI_MUFM4.UseVisualStyleBackColor = true;
+            // 
+            // label148
+            // 
+            this.label148.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label148.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label148.ForeColor = System.Drawing.Color.White;
+            this.label148.Location = new System.Drawing.Point(3, 2);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(236, 50);
+            this.label148.TabIndex = 475;
+            this.label148.Text = "봉  담";
+            this.label148.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel137
+            // 
+            this.panel137.BackColor = System.Drawing.Color.Black;
+            this.panel137.Controls.Add(this.panel138);
+            this.panel137.Location = new System.Drawing.Point(41, 182);
+            this.panel137.Name = "panel137";
+            this.panel137.Size = new System.Drawing.Size(128, 417);
+            this.panel137.TabIndex = 483;
+            // 
+            // panel138
+            // 
+            this.panel138.BackColor = System.Drawing.Color.White;
+            this.panel138.Controls.Add(this.panel139);
+            this.panel138.Controls.Add(this.label152);
+            this.panel138.Location = new System.Drawing.Point(2, 2);
+            this.panel138.Name = "panel138";
+            this.panel138.Size = new System.Drawing.Size(124, 413);
+            this.panel138.TabIndex = 409;
+            // 
+            // panel139
+            // 
+            this.panel139.BackColor = System.Drawing.Color.Black;
+            this.panel139.Controls.Add(this.btSI_RUFM4_1);
+            this.panel139.Controls.Add(this.btSI_RU4_1);
+            this.panel139.Controls.Add(this.pictureBox27);
+            this.panel139.Location = new System.Drawing.Point(3, 54);
+            this.panel139.Name = "panel139";
+            this.panel139.Size = new System.Drawing.Size(119, 356);
+            this.panel139.TabIndex = 455;
+            // 
+            // btSI_RUFM4_1
+            // 
+            this.btSI_RUFM4_1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RUFM4_1.Location = new System.Drawing.Point(1, 310);
+            this.btSI_RUFM4_1.Name = "btSI_RUFM4_1";
+            this.btSI_RUFM4_1.Size = new System.Drawing.Size(117, 45);
+            this.btSI_RUFM4_1.TabIndex = 434;
+            this.btSI_RUFM4_1.Text = "F M";
+            this.btSI_RUFM4_1.UseVisualStyleBackColor = true;
+            this.btSI_RUFM4_1.Visible = false;
+            // 
+            // btSI_RU4_1
+            // 
+            this.btSI_RU4_1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RU4_1.Location = new System.Drawing.Point(1, 265);
+            this.btSI_RU4_1.Name = "btSI_RU4_1";
+            this.btSI_RU4_1.Size = new System.Drawing.Size(117, 89);
+            this.btSI_RU4_1.TabIndex = 384;
+            this.btSI_RU4_1.Text = "광중계장치";
+            this.btSI_RU4_1.UseVisualStyleBackColor = true;
+            this.btSI_RU4_1.Click += new System.EventHandler(this.btRuB_Click);
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
+            this.pictureBox27.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(115, 262);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox27.TabIndex = 431;
+            this.pictureBox27.TabStop = false;
+            // 
+            // label152
+            // 
+            this.label152.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label152.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label152.ForeColor = System.Drawing.Color.White;
+            this.label152.Location = new System.Drawing.Point(3, 2);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(119, 50);
+            this.label152.TabIndex = 477;
+            this.label152.Text = "고  색";
+            this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel124
+            // 
+            this.panel124.BackColor = System.Drawing.Color.Black;
+            this.panel124.Controls.Add(this.panel125);
+            this.panel124.Location = new System.Drawing.Point(526, 182);
+            this.panel124.Name = "panel124";
+            this.panel124.Size = new System.Drawing.Size(128, 417);
+            this.panel124.TabIndex = 476;
+            // 
+            // panel125
+            // 
+            this.panel125.BackColor = System.Drawing.Color.White;
+            this.panel125.Controls.Add(this.panel127);
+            this.panel125.Controls.Add(this.label144);
+            this.panel125.Location = new System.Drawing.Point(2, 2);
+            this.panel125.Name = "panel125";
+            this.panel125.Size = new System.Drawing.Size(124, 413);
+            this.panel125.TabIndex = 409;
+            // 
+            // panel127
+            // 
+            this.panel127.BackColor = System.Drawing.Color.Black;
+            this.panel127.Controls.Add(this.pictureBox23);
+            this.panel127.Controls.Add(this.btSI_MU3);
+            this.panel127.Controls.Add(this.btSI_MUFM3);
+            this.panel127.Location = new System.Drawing.Point(3, 54);
+            this.panel127.Name = "panel127";
+            this.panel127.Size = new System.Drawing.Size(119, 356);
+            this.panel127.TabIndex = 453;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(115, 262);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 431;
+            this.pictureBox23.TabStop = false;
+            // 
+            // btSI_MU3
+            // 
+            this.btSI_MU3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_MU3.Location = new System.Drawing.Point(1, 265);
+            this.btSI_MU3.Name = "btSI_MU3";
+            this.btSI_MU3.Size = new System.Drawing.Size(117, 90);
+            this.btSI_MU3.TabIndex = 384;
+            this.btSI_MU3.Text = "기지국장치";
+            this.btSI_MU3.UseVisualStyleBackColor = true;
+            this.btSI_MU3.Click += new System.EventHandler(this.btMU_Click);
+            // 
+            // btSI_MUFM3
+            // 
+            this.btSI_MUFM3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_MUFM3.Location = new System.Drawing.Point(1, 310);
+            this.btSI_MUFM3.Name = "btSI_MUFM3";
+            this.btSI_MUFM3.Size = new System.Drawing.Size(117, 45);
+            this.btSI_MUFM3.TabIndex = 434;
+            this.btSI_MUFM3.Text = "F M";
+            this.btSI_MUFM3.UseVisualStyleBackColor = true;
+            // 
+            // label144
+            // 
+            this.label144.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label144.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label144.ForeColor = System.Drawing.Color.White;
+            this.label144.Location = new System.Drawing.Point(3, 2);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(119, 50);
+            this.label144.TabIndex = 475;
+            this.label144.Text = "야  목";
+            this.label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel128
+            // 
+            this.panel128.BackColor = System.Drawing.Color.Black;
+            this.panel128.Controls.Add(this.panel129);
+            this.panel128.Location = new System.Drawing.Point(700, 182);
+            this.panel128.Name = "panel128";
+            this.panel128.Size = new System.Drawing.Size(128, 417);
+            this.panel128.TabIndex = 477;
+            // 
+            // panel129
+            // 
+            this.panel129.BackColor = System.Drawing.Color.White;
+            this.panel129.Controls.Add(this.panel133);
+            this.panel129.Controls.Add(this.label147);
+            this.panel129.Location = new System.Drawing.Point(2, 2);
+            this.panel129.Name = "panel129";
+            this.panel129.Size = new System.Drawing.Size(124, 413);
+            this.panel129.TabIndex = 409;
+            // 
+            // panel133
+            // 
+            this.panel133.BackColor = System.Drawing.Color.Black;
+            this.panel133.Controls.Add(this.btSI_RUFM3_1);
+            this.panel133.Controls.Add(this.pictureBox25);
+            this.panel133.Controls.Add(this.btSI_RU3_1);
+            this.panel133.Location = new System.Drawing.Point(3, 54);
+            this.panel133.Name = "panel133";
+            this.panel133.Size = new System.Drawing.Size(119, 356);
+            this.panel133.TabIndex = 455;
+            // 
+            // btSI_RUFM3_1
+            // 
+            this.btSI_RUFM3_1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RUFM3_1.Location = new System.Drawing.Point(1, 310);
+            this.btSI_RUFM3_1.Name = "btSI_RUFM3_1";
+            this.btSI_RUFM3_1.Size = new System.Drawing.Size(117, 45);
+            this.btSI_RUFM3_1.TabIndex = 434;
+            this.btSI_RUFM3_1.Text = "F M";
+            this.btSI_RUFM3_1.UseVisualStyleBackColor = true;
+            this.btSI_RUFM3_1.Visible = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
+            this.pictureBox25.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(115, 262);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 431;
+            this.pictureBox25.TabStop = false;
+            // 
+            // btSI_RU3_1
+            // 
+            this.btSI_RU3_1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btSI_RU3_1.Location = new System.Drawing.Point(1, 265);
+            this.btSI_RU3_1.Name = "btSI_RU3_1";
+            this.btSI_RU3_1.Size = new System.Drawing.Size(117, 89);
+            this.btSI_RU3_1.TabIndex = 384;
+            this.btSI_RU3_1.Text = "광중계장치";
+            this.btSI_RU3_1.UseVisualStyleBackColor = true;
+            this.btSI_RU3_1.Click += new System.EventHandler(this.btRuB_Click);
+            // 
+            // label147
+            // 
+            this.label147.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label147.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label147.ForeColor = System.Drawing.Color.White;
+            this.label147.Location = new System.Drawing.Point(3, 2);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(119, 50);
+            this.label147.TabIndex = 477;
+            this.label147.Text = "사  리";
+            this.label147.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label145
             // 
             this.label145.BackColor = System.Drawing.Color.Black;
             this.label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label145.Location = new System.Drawing.Point(915, 360);
+            this.label145.Location = new System.Drawing.Point(1341, 360);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(10, 60);
             this.label145.TabIndex = 481;
@@ -9436,7 +10017,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.panel114);
-            this.panel7.Location = new System.Drawing.Point(1064, 182);
+            this.panel7.Location = new System.Drawing.Point(1380, 182);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(246, 417);
             this.panel7.TabIndex = 479;
@@ -9555,7 +10136,7 @@
             // 
             this.panel117.BackColor = System.Drawing.Color.Black;
             this.panel117.Controls.Add(this.panel118);
-            this.panel117.Location = new System.Drawing.Point(124, 182);
+            this.panel117.Location = new System.Drawing.Point(894, 182);
             this.panel117.Name = "panel117";
             this.panel117.Size = new System.Drawing.Size(246, 417);
             this.panel117.TabIndex = 474;
@@ -9674,7 +10255,7 @@
             // 
             this.panel121.BackColor = System.Drawing.Color.Black;
             this.panel121.Controls.Add(this.panel122);
-            this.panel121.Location = new System.Drawing.Point(1588, 182);
+            this.panel121.Location = new System.Drawing.Point(1672, 182);
             this.panel121.Name = "panel121";
             this.panel121.Size = new System.Drawing.Size(128, 417);
             this.panel121.TabIndex = 480;
@@ -9749,7 +10330,7 @@
             // 
             this.panel130.BackColor = System.Drawing.Color.Black;
             this.panel130.Controls.Add(this.panel131);
-            this.panel130.Location = new System.Drawing.Point(648, 182);
+            this.panel130.Location = new System.Drawing.Point(1186, 182);
             this.panel130.Name = "panel130";
             this.panel130.Size = new System.Drawing.Size(128, 417);
             this.panel130.TabIndex = 475;
@@ -9824,9 +10405,9 @@
             // 
             this.label151.BackColor = System.Drawing.Color.Black;
             this.label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label151.Location = new System.Drawing.Point(195, 388);
+            this.label151.Location = new System.Drawing.Point(169, 388);
             this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(1450, 5);
+            this.label151.Size = new System.Drawing.Size(1550, 5);
             this.label151.TabIndex = 476;
             // 
             // panel분당선
@@ -11868,7 +12449,6 @@
             // 
             this.panel과천선.Controls.Add(this.panel31);
             this.panel과천선.Controls.Add(this.panel18);
-            this.panel과천선.Controls.Add(this.panel29);
             this.panel과천선.Controls.Add(this.panel74);
             this.panel과천선.Controls.Add(this.panel67);
             this.panel과천선.Controls.Add(this.panel1);
@@ -11964,120 +12544,6 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 431;
             this.pictureBox9.TabStop = false;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.Black;
-            this.panel29.Controls.Add(this.lblConnectServer2);
-            this.panel29.Controls.Add(this.lblConnectServer1);
-            this.panel29.Controls.Add(this.lblTxServer2);
-            this.panel29.Controls.Add(this.lblTxServer1);
-            this.panel29.Controls.Add(this.lblRxServer2);
-            this.panel29.Controls.Add(this.lblRxServer1);
-            this.panel29.Controls.Add(this.btConnectServer2);
-            this.panel29.Controls.Add(this.btNMSPC);
-            this.panel29.Controls.Add(this.pictureBox2);
-            this.panel29.Controls.Add(this.btConnectServer1);
-            this.panel29.Location = new System.Drawing.Point(1376, 511);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(267, 158);
-            this.panel29.TabIndex = 481;
-            // 
-            // lblConnectServer2
-            // 
-            this.lblConnectServer2.BackColor = System.Drawing.Color.Silver;
-            this.lblConnectServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblConnectServer2.Location = new System.Drawing.Point(5, 83);
-            this.lblConnectServer2.Name = "lblConnectServer2";
-            this.lblConnectServer2.Size = new System.Drawing.Size(24, 12);
-            this.lblConnectServer2.TabIndex = 498;
-            // 
-            // lblConnectServer1
-            // 
-            this.lblConnectServer1.BackColor = System.Drawing.Color.Silver;
-            this.lblConnectServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblConnectServer1.Location = new System.Drawing.Point(5, 5);
-            this.lblConnectServer1.Name = "lblConnectServer1";
-            this.lblConnectServer1.Size = new System.Drawing.Size(24, 12);
-            this.lblConnectServer1.TabIndex = 497;
-            // 
-            // lblTxServer2
-            // 
-            this.lblTxServer2.BackColor = System.Drawing.Color.Silver;
-            this.lblTxServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTxServer2.Location = new System.Drawing.Point(45, 83);
-            this.lblTxServer2.Name = "lblTxServer2";
-            this.lblTxServer2.Size = new System.Drawing.Size(12, 12);
-            this.lblTxServer2.TabIndex = 496;
-            // 
-            // lblTxServer1
-            // 
-            this.lblTxServer1.BackColor = System.Drawing.Color.Silver;
-            this.lblTxServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTxServer1.Location = new System.Drawing.Point(45, 5);
-            this.lblTxServer1.Name = "lblTxServer1";
-            this.lblTxServer1.Size = new System.Drawing.Size(12, 12);
-            this.lblTxServer1.TabIndex = 464;
-            // 
-            // lblRxServer2
-            // 
-            this.lblRxServer2.BackColor = System.Drawing.Color.Silver;
-            this.lblRxServer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRxServer2.Location = new System.Drawing.Point(32, 83);
-            this.lblRxServer2.Name = "lblRxServer2";
-            this.lblRxServer2.Size = new System.Drawing.Size(12, 12);
-            this.lblRxServer2.TabIndex = 495;
-            // 
-            // lblRxServer1
-            // 
-            this.lblRxServer1.BackColor = System.Drawing.Color.Silver;
-            this.lblRxServer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRxServer1.Location = new System.Drawing.Point(32, 5);
-            this.lblRxServer1.Name = "lblRxServer1";
-            this.lblRxServer1.Size = new System.Drawing.Size(12, 12);
-            this.lblRxServer1.TabIndex = 463;
-            // 
-            // btConnectServer2
-            // 
-            this.btConnectServer2.BackColor = System.Drawing.Color.Red;
-            this.btConnectServer2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btConnectServer2.Location = new System.Drawing.Point(1, 79);
-            this.btConnectServer2.Name = "btConnectServer2";
-            this.btConnectServer2.Size = new System.Drawing.Size(60, 78);
-            this.btConnectServer2.TabIndex = 433;
-            this.btConnectServer2.Text = "STBY";
-            this.btConnectServer2.UseVisualStyleBackColor = false;
-            // 
-            // btNMSPC
-            // 
-            this.btNMSPC.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btNMSPC.Location = new System.Drawing.Point(61, 122);
-            this.btNMSPC.Name = "btNMSPC";
-            this.btNMSPC.Size = new System.Drawing.Size(205, 35);
-            this.btNMSPC.TabIndex = 384;
-            this.btNMSPC.Text = "NMS PC";
-            this.btNMSPC.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(62, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 120);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 432;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btConnectServer1
-            // 
-            this.btConnectServer1.BackColor = System.Drawing.Color.Red;
-            this.btConnectServer1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btConnectServer1.Location = new System.Drawing.Point(1, 1);
-            this.btConnectServer1.Name = "btConnectServer1";
-            this.btConnectServer1.Size = new System.Drawing.Size(60, 78);
-            this.btConnectServer1.TabIndex = 385;
-            this.btConnectServer1.Text = "MAIN";
-            this.btConnectServer1.UseVisualStyleBackColor = false;
             // 
             // panel74
             // 
@@ -13784,6 +14250,17 @@
             this.label141.TabIndex = 210;
             this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panelMainBase2
+            // 
+            this.panelMainBase2.BackColor = System.Drawing.Color.White;
+            this.panelMainBase2.Controls.Add(this.ucMUSt);
+            this.panelMainBase2.Controls.Add(this.ucRUSt);
+            this.panelMainBase2.Controls.Add(this.ucMUSt_ILSAN);
+            this.panelMainBase2.Location = new System.Drawing.Point(15, 72);
+            this.panelMainBase2.Name = "panelMainBase2";
+            this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);
+            this.panelMainBase2.TabIndex = 476;
+            // 
             // ucMUSt
             // 
             this.ucMUSt.BackColor = System.Drawing.Color.Black;
@@ -13811,44 +14288,13 @@
             this.ucMUSt_ILSAN.TabIndex = 2;
             this.ucMUSt_ILSAN.muControlClick += new Common.UserControl_Control(this.ucMUSt_ILSAN_muControlClick);
             // 
-            // ucGainSet_ILSAN
-            // 
-            this.ucGainSet_ILSAN.BackColor = System.Drawing.Color.White;
-            this.ucGainSet_ILSAN.Location = new System.Drawing.Point(5, 21);
-            this.ucGainSet_ILSAN.Name = "ucGainSet_ILSAN";
-            this.ucGainSet_ILSAN.Size = new System.Drawing.Size(752, 475);
-            this.ucGainSet_ILSAN.TabIndex = 186;
-            this.ucGainSet_ILSAN.gainSetControlClick += new Common.UserControl_Control(this.ucGainSet_ILSAN_gainSetControlClick);
-            // 
-            // ucRangeSet
-            // 
-            this.ucRangeSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucRangeSet.BackgroundImage")));
-            this.ucRangeSet.Location = new System.Drawing.Point(340, 139);
-            this.ucRangeSet.Name = "ucRangeSet";
-            this.ucRangeSet.Size = new System.Drawing.Size(447, 390);
-            this.ucRangeSet.TabIndex = 0;
-            // 
-            // ucLT
-            // 
-            this.ucLT.BackColor = System.Drawing.Color.Black;
-            this.ucLT.Location = new System.Drawing.Point(63, 34);
-            this.ucLT.Name = "ucLT";
-            this.ucLT.Size = new System.Drawing.Size(1000, 600);
-            this.ucLT.TabIndex = 0;
-            // 
-            // ucErrorSearch1
-            // 
-            this.ucErrorSearch1.BackColor = System.Drawing.Color.Black;
-            this.ucErrorSearch1.Location = new System.Drawing.Point(15, 72);
-            this.ucErrorSearch1.Name = "ucErrorSearch1";
-            this.ucErrorSearch1.Size = new System.Drawing.Size(1850, 790);
-            this.ucErrorSearch1.TabIndex = 387;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1042);
+            this.Controls.Add(this.panelGround1);
+            this.Controls.Add(this.panelGround3);
             this.Controls.Add(this.lblConnectNMS);
             this.Controls.Add(this.lblTxNMS);
             this.Controls.Add(this.lblRxNMS);
@@ -13857,8 +14303,6 @@
             this.Controls.Add(this.panelMessageView);
             this.Controls.Add(this.btMenu4);
             this.Controls.Add(this.btMenu1);
-            this.Controls.Add(this.panelGround1);
-            this.Controls.Add(this.panelGround3);
             this.Controls.Add(this.panelGround2);
             this.Name = "frmMain";
             this.Text = "과천선 NMS";
@@ -13907,9 +14351,28 @@
             this.tabLineTest.ResumeLayout(false);
             this.panelGround2.ResumeLayout(false);
             this.panelGround1.ResumeLayout(false);
-            this.panelMainBase2.ResumeLayout(false);
             this.panelMainBase1.ResumeLayout(false);
             this.panel수인선.ResumeLayout(false);
+            this.panel29.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel126.ResumeLayout(false);
+            this.panel134.ResumeLayout(false);
+            this.panel135.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.panel136.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            this.panel137.ResumeLayout(false);
+            this.panel138.ResumeLayout(false);
+            this.panel139.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            this.panel124.ResumeLayout(false);
+            this.panel125.ResumeLayout(false);
+            this.panel127.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            this.panel128.ResumeLayout(false);
+            this.panel129.ResumeLayout(false);
+            this.panel133.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel114.ResumeLayout(false);
             this.panel115.ResumeLayout(false);
@@ -13994,8 +14457,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel74.ResumeLayout(false);
             this.panel75.ResumeLayout(false);
             this.panel76.ResumeLayout(false);
@@ -14061,6 +14522,7 @@
             this.panel111.ResumeLayout(false);
             this.panel112.ResumeLayout(false);
             this.panel113.ResumeLayout(false);
+            this.panelMainBase2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -14646,6 +15108,42 @@
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.Label label149;
         private System.Windows.Forms.Label label151;
+        private System.Windows.Forms.Label label154;
+        private System.Windows.Forms.Label label153;
+        private System.Windows.Forms.Panel panel126;
+        private System.Windows.Forms.Panel panel134;
+        private System.Windows.Forms.Panel panel135;
+        private System.Windows.Forms.Button btSI_RUFM4;
+        private System.Windows.Forms.Button btSI_RU4;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.Panel panel136;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.Button btSI_MU4;
+        private System.Windows.Forms.Button btSI_MUFM4;
+        private System.Windows.Forms.Label label148;
+        private System.Windows.Forms.Panel panel137;
+        private System.Windows.Forms.Panel panel138;
+        private System.Windows.Forms.Panel panel139;
+        private System.Windows.Forms.Button btSI_RUFM4_1;
+        private System.Windows.Forms.Button btSI_RU4_1;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.Label label152;
+        private System.Windows.Forms.Panel panel124;
+        private System.Windows.Forms.Panel panel125;
+        private System.Windows.Forms.Panel panel127;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Button btSI_MU3;
+        private System.Windows.Forms.Button btSI_MUFM3;
+        private System.Windows.Forms.Label label144;
+        private System.Windows.Forms.Panel panel128;
+        private System.Windows.Forms.Panel panel129;
+        private System.Windows.Forms.Panel panel133;
+        private System.Windows.Forms.Button btSI_RUFM3_1;
+        private System.Windows.Forms.Button btSI_RU3_1;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.Label label147;
+        private System.Windows.Forms.Button btSI_RU3;
+        private System.Windows.Forms.Button btSI_RUFM3;
     }
 }
 

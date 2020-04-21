@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,7 +82,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\99. 공통\Ver 1.03\Common\Common.csproj">
+    <ProjectReference Include="..\..\..\Backup\D\work\c_sharp\4. 열차 무선 NMS\99. 공통\Ver 1.03\Common\Common.csproj">
       <Project>{5f0fd856-5200-4d88-9167-88948ca40a72}</Project>
       <Name>Common</Name>
     </ProjectReference>
