@@ -458,7 +458,7 @@ namespace NMS
 
             int i = 0;
 
-            Common.clsCommon.thisVer = "Ver 1.06";
+            Common.clsCommon.thisVer = "Ver 1.05";
 
             this.Text = Common.clsNMS.nmsGUIUser + " 열차무선 NMS - " + Common.clsCommon.thisVer;
             switch (Common.clsNMS.nmsGUIUser)
@@ -3094,7 +3094,7 @@ namespace NMS
             {
                 //수정일 : 2016-02-29
                 //검수용
-                SetVisible(frmErrMsg, true);
+                //SetVisible(frmErrMsg, true);
 
                 switch (mode)
                 {
@@ -3106,15 +3106,14 @@ namespace NMS
                             //수정일 : 2016-02-29
                             //일단 검수를 위해 안보이게..
                             //FIXME 검수 후 풀어야함
-                            frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
-                            AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
-                            Common.clsNMS.flagMuError[muID - 1] = true;
+                            //frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
+                            //AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(MU)의 DC 전압(" + tmpValue.ToString() + ")이 범위를 벗어났습니다.");
+                            //Common.clsNMS.flagMuError[muID - 1] = true;
                         }
                         return 1;
 
                     case 1: //RU_A
-                        
-                        //SetVisible(frmErrMsg, true);
+                        SetVisible(frmErrMsg, true);
 
                         if (!Common.clsNMS.flagRuBdaError[muID - 1, ruID, 0])
                         {
@@ -3127,7 +3126,7 @@ namespace NMS
 
                     case 2: //RU_B
 
-                        //SetVisible(frmErrMsg, true);
+                        SetVisible(frmErrMsg, true);
 
                         if (!Common.clsNMS.flagRuBdaError[muID - 1, ruID, 0])
                         {
@@ -3654,11 +3653,11 @@ namespace NMS
             {   //Error 발생
                 if (!Common.clsNMS.flagMuFmError[muID - 1])
                 {   //정상에서 Error가 발생한 상태이므로 메세지창을 띄운다.
-                    SetVisible(frmErrMsg, true);
-                    frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(FM)에 장애가 발생하였습니다.\r\n\r\n자세한 내용은 "
-                        + Common.clsNMS.stationList[muID - 1] + " 기지국 상세 화면을\r\n확인하시기 바랍니다.");
+                    //SetVisible(frmErrMsg, true);
+                    //frmErrMsg.SetText(Common.clsNMS.stationList[muID - 1] + " 기지국(FM)에 장애가 발생하였습니다.\r\n\r\n자세한 내용은 "
+                    //    + Common.clsNMS.stationList[muID - 1] + " 기지국 상세 화면을\r\n확인하시기 바랍니다.");
 
-                    AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(FM)에 장애가 발생하였습니다.");
+                    //AddStatus(Common.clsNMS.stationList[muID - 1] + " 기지국(FM)에 장애가 발생하였습니다.");
                 }
 
                 Common.clsNMS.flagMuFmError[muID - 1] = true;     //Error 발생
@@ -3903,17 +3902,15 @@ namespace NMS
                         }
                     }
                     break;
-            }
+            }            
 
-
-            const int TxRxErrorCount = 60;
             //각 기지국과의 통신상태를 점검하기 위한 작업
             for (i = 0; i < Common.clsNMS.stationList.Count; i++)
             {
                 //MU
-                if (Common.clsNMS.muruComSt[i].cntMu++ > TxRxErrorCount)
+                if (Common.clsNMS.muruComSt[i].cntMu++ > 30)
                 {
-                    Common.clsNMS.muruComSt[i].cntMu = TxRxErrorCount +1 ;
+                    Common.clsNMS.muruComSt[i].cntMu = 31;
 
                     if (Common.clsNMS.muruComSt[i].flagMu)
                     {
@@ -3936,13 +3933,13 @@ namespace NMS
                 }
 
                 //MU_FM
-                if (Common.clsNMS.muruComSt[i].cntFm++ > TxRxErrorCount)
+                if (Common.clsNMS.muruComSt[i].cntFm++ > 30)
                 {
-                    Common.clsNMS.muruComSt[i].cntFm = TxRxErrorCount + 1;
+                    Common.clsNMS.muruComSt[i].cntFm = 31;
 
                     if (Common.clsNMS.muruComSt[i].flagFm)
                     {
-                        AddStatus(Common.clsNMS.stationList[i] + "(MU FM) 통신이상 발생");
+                        //AddStatus(Common.clsNMS.stationList[i] + "(MU FM) 통신이상 발생");
 
                         Common.clsNMS.muruComSt[i].flagFm = false;
 
@@ -3961,9 +3958,9 @@ namespace NMS
                 }
 
                 //RuA
-                if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntRu++ > TxRxErrorCount)
+                if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntRu++ > 30)
                 {
-                    Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntRu = TxRxErrorCount+1;
+                    Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntRu = 31;
 
                     if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].flagRu)
                     {
@@ -3986,13 +3983,13 @@ namespace NMS
                 }
 
                 //RuA_FM
-                if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntFm++ > TxRxErrorCount)
+                if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntFm++ > 30)
                 {
-                    Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntFm = TxRxErrorCount +1;
+                    Common.clsNMS.muruComSt[i].ruBdaCommSt[0].cntFm = 31;
 
                     if (Common.clsNMS.muruComSt[i].ruBdaCommSt[0].flagFm)
                     {
-                        AddStatus(Common.clsNMS.muruName[i].muName + "(RU_A FM) 통신이상 발생");
+                        //AddStatus(Common.clsNMS.muruName[i].muName + "(RU_A FM) 통신이상 발생");
 
                         Common.clsNMS.muruComSt[i].ruBdaCommSt[0].flagFm = false;
 
@@ -4014,9 +4011,9 @@ namespace NMS
                 for (j = 0; j < 4; j++)
                 {
                     //RU
-                    if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntRu++ > TxRxErrorCount)
+                    if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntRu++ > 30)
                     {
-                        Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntRu = TxRxErrorCount+1;
+                        Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntRu = 31;
 
                         if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].flagRu)
                         {
@@ -4044,14 +4041,14 @@ namespace NMS
                 for (j = 0; j < 4; j++)
                 {
                     //RU
-                    if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntFm++ > TxRxErrorCount)
+                    if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntFm++ > 30)
                     {
-                        Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntFm = TxRxErrorCount+1;
+                        Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].cntFm = 31;
 
                         if (Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].flagFm)
                         {
-                            if (Common.clsNMS.muruName[i].ruName[j].ruName != "")
-                                AddStatus(Common.clsNMS.muruName[i].ruName[j].ruName + "(RU_B FM) 통신이상 발생");
+                            //if (Common.clsNMS.muruName[i].ruName[j].ruName != "")
+                            //    AddStatus(Common.clsNMS.muruName[i].ruName[j].ruName + "(RU_B FM) 통신이상 발생");
 
                             Common.clsNMS.muruComSt[i].ruBdaCommSt[j + 1].flagFm = false;
 

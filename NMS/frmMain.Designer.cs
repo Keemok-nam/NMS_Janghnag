@@ -6975,21 +6975,14 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.gbILSAN_MuAFGain = new System.Windows.Forms.GroupBox();
-            this.ucGainSet_ILSAN = new Common.ucASGainSet_ILSAN();
             this.tabRange = new System.Windows.Forms.TabPage();
-            this.ucRangeSet = new Common.ucRangeSetup();
             this.tabLineTest = new System.Windows.Forms.TabPage();
-            this.ucLT = new Common.ucLineTest();
             this.label1 = new System.Windows.Forms.Label();
             this.panelGround2 = new System.Windows.Forms.Panel();
-            this.ucErrorSearch1 = new Common.ucErrorSearch();
             this.label2 = new System.Windows.Forms.Label();
             this.panelGround1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMainBase2 = new System.Windows.Forms.Panel();
-            this.ucRUSt = new Common.ucRUStatus();
-            this.ucMUSt_ILSAN = new Common.ucMUStatus_ILSAN();
-            this.ucMUSt = new Common.ucMUStatus();
             this.panelMainBase1 = new System.Windows.Forms.Panel();
             this.panel수인선 = new System.Windows.Forms.Panel();
             this.label145 = new System.Windows.Forms.Label();
@@ -7399,6 +7392,13 @@
             this.label139 = new System.Windows.Forms.Label();
             this.label140 = new System.Windows.Forms.Label();
             this.label141 = new System.Windows.Forms.Label();
+            this.ucMUSt = new Common.ucMUStatus();
+            this.ucRUSt = new Common.ucRUStatus();
+            this.ucMUSt_ILSAN = new Common.ucMUStatus_ILSAN();
+            this.ucGainSet_ILSAN = new Common.ucASGainSet_ILSAN();
+            this.ucRangeSet = new Common.ucRangeSetup();
+            this.ucLT = new Common.ucLineTest();
+            this.ucErrorSearch1 = new Common.ucErrorSearch();
             this.panelMessageView.SuspendLayout();
             this.panelGround3.SuspendLayout();
             this.gbDB.SuspendLayout();
@@ -9310,15 +9310,6 @@
             this.gbILSAN_MuAFGain.TabStop = false;
             this.gbILSAN_MuAFGain.Text = "송/수신 게인 설정";
             // 
-            // ucGainSet_ILSAN
-            // 
-            this.ucGainSet_ILSAN.BackColor = System.Drawing.Color.White;
-            this.ucGainSet_ILSAN.Location = new System.Drawing.Point(5, 21);
-            this.ucGainSet_ILSAN.Name = "ucGainSet_ILSAN";
-            this.ucGainSet_ILSAN.Size = new System.Drawing.Size(752, 475);
-            this.ucGainSet_ILSAN.TabIndex = 186;
-            this.ucGainSet_ILSAN.gainSetControlClick += new Common.UserControl_Control(this.ucGainSet_ILSAN_gainSetControlClick);
-            // 
             // tabRange
             // 
             this.tabRange.Controls.Add(this.ucRangeSet);
@@ -9329,14 +9320,6 @@
             this.tabRange.Text = "  임계치 설정  ";
             this.tabRange.UseVisualStyleBackColor = true;
             // 
-            // ucRangeSet
-            // 
-            this.ucRangeSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucRangeSet.BackgroundImage")));
-            this.ucRangeSet.Location = new System.Drawing.Point(340, 139);
-            this.ucRangeSet.Name = "ucRangeSet";
-            this.ucRangeSet.Size = new System.Drawing.Size(447, 390);
-            this.ucRangeSet.TabIndex = 0;
-            // 
             // tabLineTest
             // 
             this.tabLineTest.Controls.Add(this.ucLT);
@@ -9346,14 +9329,6 @@
             this.tabLineTest.TabIndex = 4;
             this.tabLineTest.Text = "  회선시험  ";
             this.tabLineTest.UseVisualStyleBackColor = true;
-            // 
-            // ucLT
-            // 
-            this.ucLT.BackColor = System.Drawing.Color.Black;
-            this.ucLT.Location = new System.Drawing.Point(63, 34);
-            this.ucLT.Name = "ucLT";
-            this.ucLT.Size = new System.Drawing.Size(1000, 600);
-            this.ucLT.TabIndex = 0;
             // 
             // label1
             // 
@@ -9377,14 +9352,6 @@
             this.panelGround2.Size = new System.Drawing.Size(1880, 870);
             this.panelGround2.TabIndex = 397;
             // 
-            // ucErrorSearch1
-            // 
-            this.ucErrorSearch1.BackColor = System.Drawing.Color.Black;
-            this.ucErrorSearch1.Location = new System.Drawing.Point(15, 72);
-            this.ucErrorSearch1.Name = "ucErrorSearch1";
-            this.ucErrorSearch1.Size = new System.Drawing.Size(1850, 790);
-            this.ucErrorSearch1.TabIndex = 387;
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Blue;
@@ -9401,8 +9368,8 @@
             // 
             this.panelGround1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGround1.BackgroundImage")));
             this.panelGround1.Controls.Add(this.lblTitle);
-            this.panelGround1.Controls.Add(this.panelMainBase2);
             this.panelGround1.Controls.Add(this.panelMainBase1);
+            this.panelGround1.Controls.Add(this.panelMainBase2);
             this.panelGround1.Location = new System.Drawing.Point(12, 8);
             this.panelGround1.Name = "panelGround1";
             this.panelGround1.Size = new System.Drawing.Size(1880, 870);
@@ -9430,33 +9397,6 @@
             this.panelMainBase2.Name = "panelMainBase2";
             this.panelMainBase2.Size = new System.Drawing.Size(1850, 790);
             this.panelMainBase2.TabIndex = 476;
-            // 
-            // ucRUSt
-            // 
-            this.ucRUSt.BackColor = System.Drawing.Color.Black;
-            this.ucRUSt.Location = new System.Drawing.Point(5, 5);
-            this.ucRUSt.Name = "ucRUSt";
-            this.ucRUSt.Size = new System.Drawing.Size(1840, 780);
-            this.ucRUSt.TabIndex = 1;
-            this.ucRUSt.ruControlClick += new Common.UserControl_Control(this.RuSt_ruControlClick);
-            // 
-            // ucMUSt_ILSAN
-            // 
-            this.ucMUSt_ILSAN.BackColor = System.Drawing.Color.Black;
-            this.ucMUSt_ILSAN.Location = new System.Drawing.Point(5, 5);
-            this.ucMUSt_ILSAN.Name = "ucMUSt_ILSAN";
-            this.ucMUSt_ILSAN.Size = new System.Drawing.Size(1220, 780);
-            this.ucMUSt_ILSAN.TabIndex = 2;
-            this.ucMUSt_ILSAN.muControlClick += new Common.UserControl_Control(this.ucMUSt_ILSAN_muControlClick);
-            // 
-            // ucMUSt
-            // 
-            this.ucMUSt.BackColor = System.Drawing.Color.Black;
-            this.ucMUSt.Location = new System.Drawing.Point(5, 5);
-            this.ucMUSt.Name = "ucMUSt";
-            this.ucMUSt.Size = new System.Drawing.Size(1840, 780);
-            this.ucMUSt.TabIndex = 0;
-            this.ucMUSt.muControlClick += new Common.UserControl_Control(this.MUSt_muControlClick);
             // 
             // panelMainBase1
             // 
@@ -13843,6 +13783,66 @@
             this.label141.Size = new System.Drawing.Size(720, 5);
             this.label141.TabIndex = 210;
             this.label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ucMUSt
+            // 
+            this.ucMUSt.BackColor = System.Drawing.Color.Black;
+            this.ucMUSt.Location = new System.Drawing.Point(5, 5);
+            this.ucMUSt.Name = "ucMUSt";
+            this.ucMUSt.Size = new System.Drawing.Size(1840, 780);
+            this.ucMUSt.TabIndex = 0;
+            this.ucMUSt.muControlClick += new Common.UserControl_Control(this.MUSt_muControlClick);
+            // 
+            // ucRUSt
+            // 
+            this.ucRUSt.BackColor = System.Drawing.Color.Black;
+            this.ucRUSt.Location = new System.Drawing.Point(5, 5);
+            this.ucRUSt.Name = "ucRUSt";
+            this.ucRUSt.Size = new System.Drawing.Size(1840, 780);
+            this.ucRUSt.TabIndex = 1;
+            this.ucRUSt.ruControlClick += new Common.UserControl_Control(this.RuSt_ruControlClick);
+            // 
+            // ucMUSt_ILSAN
+            // 
+            this.ucMUSt_ILSAN.BackColor = System.Drawing.Color.Black;
+            this.ucMUSt_ILSAN.Location = new System.Drawing.Point(5, 5);
+            this.ucMUSt_ILSAN.Name = "ucMUSt_ILSAN";
+            this.ucMUSt_ILSAN.Size = new System.Drawing.Size(1220, 780);
+            this.ucMUSt_ILSAN.TabIndex = 2;
+            this.ucMUSt_ILSAN.muControlClick += new Common.UserControl_Control(this.ucMUSt_ILSAN_muControlClick);
+            // 
+            // ucGainSet_ILSAN
+            // 
+            this.ucGainSet_ILSAN.BackColor = System.Drawing.Color.White;
+            this.ucGainSet_ILSAN.Location = new System.Drawing.Point(5, 21);
+            this.ucGainSet_ILSAN.Name = "ucGainSet_ILSAN";
+            this.ucGainSet_ILSAN.Size = new System.Drawing.Size(752, 475);
+            this.ucGainSet_ILSAN.TabIndex = 186;
+            this.ucGainSet_ILSAN.gainSetControlClick += new Common.UserControl_Control(this.ucGainSet_ILSAN_gainSetControlClick);
+            // 
+            // ucRangeSet
+            // 
+            this.ucRangeSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucRangeSet.BackgroundImage")));
+            this.ucRangeSet.Location = new System.Drawing.Point(340, 139);
+            this.ucRangeSet.Name = "ucRangeSet";
+            this.ucRangeSet.Size = new System.Drawing.Size(447, 390);
+            this.ucRangeSet.TabIndex = 0;
+            // 
+            // ucLT
+            // 
+            this.ucLT.BackColor = System.Drawing.Color.Black;
+            this.ucLT.Location = new System.Drawing.Point(63, 34);
+            this.ucLT.Name = "ucLT";
+            this.ucLT.Size = new System.Drawing.Size(1000, 600);
+            this.ucLT.TabIndex = 0;
+            // 
+            // ucErrorSearch1
+            // 
+            this.ucErrorSearch1.BackColor = System.Drawing.Color.Black;
+            this.ucErrorSearch1.Location = new System.Drawing.Point(15, 72);
+            this.ucErrorSearch1.Name = "ucErrorSearch1";
+            this.ucErrorSearch1.Size = new System.Drawing.Size(1850, 790);
+            this.ucErrorSearch1.TabIndex = 387;
             // 
             // frmMain
             // 

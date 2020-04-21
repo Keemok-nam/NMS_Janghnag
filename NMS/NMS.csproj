@@ -81,7 +81,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\6. 과천,분당,일산\프로그램\999. 공통\Common\Ver 1.01\Common\Common.csproj">
+    <ProjectReference Include="..\..\..\99. 공통\Ver 1.03\Common\Common.csproj">
       <Project>{5f0fd856-5200-4d88-9167-88948ca40a72}</Project>
       <Name>Common</Name>
     </ProjectReference>
